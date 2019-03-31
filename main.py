@@ -3,7 +3,7 @@
 __author__ = 'Andy Yang'
 
 import copy
-import data, data_visual, perceptron_algor,choose_model
+import data, data_visual, perceptron_algor,choose_model,svm_algor
 
 if __name__ == "__main__":
     # Acquire data
@@ -22,3 +22,5 @@ if __name__ == "__main__":
     opt_model = choose_model.chooseModel(model)
     # Model Visualisation and Test
     visualisation.showModel(opt_model[0], opt_model[1])
+    # Use SVM algorithm
+    svm_algor.svmAlgor()

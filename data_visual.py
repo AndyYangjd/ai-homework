@@ -70,7 +70,7 @@ class data_visual():
         self.LIM = 100
 
     def showTrainData(self):
-        plt.figure('Train_Data')
+        plt.figure('Train_Data',figsize=(100,100))
         plt.plot(
             self.tra_postive_x,
             self.tra_postive_y,
@@ -86,14 +86,15 @@ class data_visual():
         plt.title('Train_Data')
         plt.xlim(-self.LIM, self.LIM)
         plt.ylim(-self.LIM, self.LIM)
-        plt.legend(loc='upper right')
+        plt.legend(
+            loc='upper right', bbox_to_anchor=(1, 1.08), borderaxespad=0)
         plt.draw()
         plt.pause(3)
-        plt.savefig('train_data.png')
+        plt.savefig('train_data.png',dpi=100)
         plt.close()
 
     def showModel(self, w, b):
-        plt.figure('Model')
+        plt.figure('Model',figsize=(100,100))
         plt.plot(
             self.tra_postive_x,
             self.tra_postive_y,
@@ -130,8 +131,8 @@ class data_visual():
         plt.title('Model')
         plt.xlim(-self.LIM, self.LIM)
         plt.ylim(-self.LIM, self.LIM)
-        plt.legend(loc='upper right')
+        plt.legend(loc='upper right',bbox_to_anchor=(1,1.15),borderaxespad=0)
         plt.draw()
         plt.pause(3)
-        plt.savefig('Model.png')
+        plt.savefig('Model.png',dpi=100)
         plt.close()

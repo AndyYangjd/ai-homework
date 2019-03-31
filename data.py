@@ -16,6 +16,7 @@ __author__ = 'Andy Yang'
 
 import numpy as np
 import sys
+import csv
 
 def makeLinearSeparableData(N=250):
     """
@@ -54,19 +55,17 @@ def makeLinearSeparableData(N=250):
 
     # Save train_data, test_data
     train_data = data[:n_train]
-    fileObject = open('train_data.txt', 'w')
+    fileObject = open('train_data.csv', 'w')
+    writer=csv.writer(fileObject)
     for line in train_data:
-        line = str(line)
-        fileObject.write(line[1:-1])
-        fileObject.write('\n')
+        writer.writerow(line)
     fileObject.close()
 
     test_data = data[n_train:]
-    fileObject = open('test_data.txt', 'w')
+    fileObject = open('test_data.csv', 'w')
+    writer = csv.writer(fileObject)
     for line in test_data:
-        line = str()
-        fileObject.write(line[1:-1])
-        fileObject.write('\n')
+        writer.writerow(line)
     fileObject.close()
 
     # Return train_data, test_data
