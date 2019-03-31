@@ -20,5 +20,5 @@ if __name__ == "__main__":
     model = perceptron_algor.perceptron(copy.deepcopy(train_data), K=4)
     # Get the optimum model
     opt_model = choose_model.chooseModel(model)
-    # Model Visualisation
-    visualisation.showModel(opt_model[0],opt_model[1])
+    # Model Visualisation and Test
+    visualisation.showModel(opt_model[0], opt_model[1])
