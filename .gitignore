@@ -1,5 +1,4 @@
 *.pyc
-paper
 __pycache__
 *.aux
 *.log
