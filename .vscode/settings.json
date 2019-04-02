@@ -1,0 +1,10 @@
+{
+    "python.pythonPath": "/home/andy/anaconda3/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "yapf",
+    "python.formatting.yapfArgs": [
+        "--style", "{blank_lines_around_top_level_definition: 1,blank_line_before_nested_class_or_def: False,no_spaces_around_selected_binary_operators: *,/}"
+    ],
+    "python.linting.flake8Enabled": false,
+}

@@ -3,8 +3,6 @@
 考虑到SVM中SMO算法比较复杂，而且有成熟的库模块可以使用。
 因此基于避免重复造轮子的考虑，直接使用scikit-learn库中的SVM算法模型，重点在于库API的使用。
 另外本模块不再使用之前的方法通过函数获得数据，而是换个思路使用pands来处理data.py中生成的txt数据。
-注：scikit-learn是一个广泛应用的用于实现机器学习算法的库。
-参考:https://github.com/lawlite19/MachineLearning_Python/blob/master/SVM/SVM_scikit-learn.py
 '''
 __author__ = 'Andy Yang'
 

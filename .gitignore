@@ -1,4 +1,6 @@
 *.pyc
 paper
 __pycache__
-.vscode
+*.aux
+*.log
+*.gz
